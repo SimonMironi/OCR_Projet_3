@@ -1,6 +1,3 @@
-@import '../variables/variables';
-@import '../mixins/mixins';
-
 .container__menus--la_note_enchantee{
     background-color: $salmon;
     @include text_center();
