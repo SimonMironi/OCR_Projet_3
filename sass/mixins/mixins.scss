@@ -54,7 +54,11 @@
     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
-
+@mixin background-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 //object-fit:cover;
 //balise pictures
 // transition: transform-scale(1.5);

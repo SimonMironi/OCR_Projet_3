@@ -5,24 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 header {
   background-color: #549d88;
   margin: 0px;
@@ -100,7 +82,10 @@ body {
 }
 
 .container__menus--la_note_enchantee {
-  background-color: #fbdfdb;
+  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   color: #6c4747;
 }
@@ -114,7 +99,10 @@ body {
 }
 
 .container__menus--le_chic_à_la_française {
-  background-color: #fef7fa;
+  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 .container__menus--le_chic_à_la_française h2 {
@@ -130,7 +118,10 @@ body {
 }
 
 .container__menus--le_delice_des_papilles {
-  background-color: #fafbfc;
+  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 .container__menus--le_delice_des_papilles h2 {
@@ -147,7 +138,10 @@ body {
 }
 
 .container__menus--la_palette_du_gout {
-  background-color: #fffffe;
+  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 .container__menus--la_palette_du_gout h2 {

@@ -1,18 +1,21 @@
 .container__menus--la_note_enchantee{
-    background-color: $salmon;
+    background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');
+    @include background-image();
     @include text_center();
     color: $font_brown;
     h2{
         @include Pacifico();
         font-weight: 300;
     }
+
     h3{
         @include Pacifico();
         @include bigger_menu_title();
     }
 }
 .container__menus--le_chic_à_la_française{
-    background-color: $light_pink;
+    background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');
+    @include background-image();
     @include text_center();
     h2{
         @include Prata();
@@ -26,7 +29,8 @@
 }
  
 .container__menus--le_delice_des_papilles{
-    background-color: $light_blue;
+    background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/3.jpg');
+    @include background-image();
     @include text_center();
     h2{
         @include Dancing_Script();
@@ -38,9 +42,10 @@
         @include bigger_menu_title();
         color: $font_lavande;
     }
-}
+} 
 .container__menus--la_palette_du_gout{
-    background-color: $white;
+    background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/4.jpg');
+    @include background-image();
     @include text_center();
     h2{
         @include green_gradient_text();
