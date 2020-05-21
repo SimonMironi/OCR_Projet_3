@@ -1,0 +1,85 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+.container__menus--la_note_enchantee{
+    background-color: $salmon;
+    @include text_center();
+    color: $font_brown;
+    h2{
+        @include Pacifico();
+        font-weight: 300;
+    }
+    h3{
+        @include Pacifico();
+        @include bigger_menu_title();
+    }
+}
+.container__menus--le_chic_à_la_française{
+    background-color: $light_pink;
+    @include text_center();
+    h2{
+        @include Prata();
+        @include gold_purple_gradient_text();
+    }
+    h3{
+        @include Prata();
+        @include bigger_menu_title();
+        color: $font_gold_orange;
+    }
+}
+ 
+.container__menus--le_delice_des_papilles{
+    background-color: $light_blue;
+    @include text_center();
+    h2{
+        @include Dancing_Script();
+        font-size: 26px;
+        @include blue_gradient_text();
+    }
+    h3{
+        @include Dancing_Script();
+        @include bigger_menu_title();
+        color: $font_lavande;
+    }
+}
+.container__menus--la_palette_du_gout{
+    background-color: $white;
+    @include text_center();
+    h2{
+        @include green_gradient_text();
+        @include Caveat();
+        font-size: 26px;
+    }
+    h3{
+        @include Caveat();
+        @include bigger_menu_title();
+        color: $font_green;
+    }
+}
+
+//Partie page menu 
+
+.menu {
+    @include center_element();
+    @include border-radius();
+    width: 40%;
+    height: 250px;
+    text-align: center;
+    padding: 30px;
+    &.menu--ledelicedespapilles {
+        background-color: $light_blue;
+        h1{
+            @include Dancing_Script();
+            @include blue_gradient_text();
+        }
+        .menu__plat_price{
+            p {
+                @include Dancing_Script();
+                color: $font_lavande;
+            }
+        }
+    }
+    &.menu--lechicalafrancaise {
+        background-color: $light_pink;
+    }
+}

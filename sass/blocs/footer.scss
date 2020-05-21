@@ -1,0 +1,19 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+@import '../fonts/fonts';
+
+
+footer {
+    @include horizontal_flex();
+    background-color: $header_footer_color;
+    justify-content: space-between;
+    padding: 20px;
+    a {
+        font-family: 'Poppins', sans-serif;
+        color: $header_font_color;
+        /*a:hover {
+            
+        }*/
+    }
+}
+
