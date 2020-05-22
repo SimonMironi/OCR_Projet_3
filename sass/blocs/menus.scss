@@ -1,17 +1,17 @@
 .container__menus--la_note_enchantee{
     background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');
-    @include background-image();
-    @include text_center();
-    color: $font_brown;
-    h2{
-        @include Pacifico();
-        font-weight: 300;
-    }
-
-    h3{
-        @include Pacifico();
-        @include bigger_menu_title();
-    }
+        @include background-image();
+        @include text_center();
+        color: $font_brown;
+        h2{
+            @include Pacifico();
+            font-weight: 300;
+        }
+        h3{
+            @include Pacifico();
+            @include bigger_menu_title();
+        }
+        
 }
 .container__menus--le_chic_à_la_française{
     background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');
@@ -65,23 +65,29 @@
     @include center_element();
     @include border-radius();
     width: 40%;
-    height: 250px;
+    height: auto;
     text-align: center;
     padding: 30px;
     &.menu--ledelicedespapilles {
         background-color: $light_blue;
+        color: $font_lavande;
+        @include Dancing_Script();
         h1{
-            @include Dancing_Script();
             @include blue_gradient_text();
         }
         .menu__plat_price{
             p {
                 @include Dancing_Script();
-                color: $font_lavande;
             }
         }
     }
     &.menu--lechicalafrancaise {
         background-color: $light_pink;
+    }
+    &.menu--lechicalafrancaise{
+
+    }
+    &.menu--lechicalafrancaise{
+        
     }
 }

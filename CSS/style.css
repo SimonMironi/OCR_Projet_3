@@ -162,22 +162,22 @@ body {
   margin-right: auto;
   border-radius: 5px;
   width: 40%;
-  height: 250px;
+  height: auto;
   text-align: center;
   padding: 30px;
 }
 .menu.menu--ledelicedespapilles {
   background-color: #fafbfc;
+  color: #5262ad;
+  font-family: "Dancing Script", cursive;
 }
 .menu.menu--ledelicedespapilles h1 {
-  font-family: "Dancing Script", cursive;
   background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu.menu--ledelicedespapilles .menu__plat_price p {
   font-family: "Dancing Script", cursive;
-  color: #5262ad;
 }
 .menu.menu--lechicalafrancaise {
   background-color: #fef7fa;
