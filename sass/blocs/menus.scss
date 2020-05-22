@@ -11,6 +11,9 @@
             @include Pacifico();
             @include bigger_menu_title();
         }
+        &:hover {
+            background-color: gold;
+          }
         
 }
 .container__menus--le_chic_à_la_française{
@@ -68,26 +71,56 @@
     height: auto;
     text-align: center;
     padding: 30px;
-    &.menu--ledelicedespapilles {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &.menu--lanoteenchantee {
         background-color: $light_blue;
         color: $font_lavande;
         @include Dancing_Script();
-        h1{
+         h1{
             @include blue_gradient_text();
         }
-        .menu__plat_price{
-            p {
-                @include Dancing_Script();
-            }
+        li{
+            @include list();
+        }
+        span{
+            font-weight: bolder;
         }
     }
     &.menu--lechicalafrancaise {
         background-color: $light_pink;
+        color: $font_gold_orange;
+        @include Prata();
+        li{
+            @include list();
+        }
+        span{
+            font-weight: bolder;
+        }
     }
-    &.menu--lechicalafrancaise{
-
+    &.menu--lapalettedugout{
+        background-color: $white;
+        color: $font_green;
+        @include Caveat();
+        li{
+            @include list();
+        }
+        span{
+            font-weight: bolder;
+        }
     }
-    &.menu--lechicalafrancaise{
-        
+    &.menu--ledelicedespapilles{
+        background-color: $grey;
+        color: black;
+        @include Dancing_Script();
+        h1{
+            @include blue_gradient_text();
+        }
+        li{
+            @include list();
+        }
+        span{
+            font-weight: bolder;
+        }
     }
 }

@@ -97,6 +97,9 @@ body {
   font-family: "Pacifico", cursive;
   font-size: 30px;
 }
+.container__menus--la_note_enchantee:hover {
+  background-color: gold;
+}
 
 .container__menus--le_chic_à_la_française {
   background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/2.jpg");
@@ -165,10 +168,59 @@ body {
   height: auto;
   text-align: center;
   padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.menu.menu--ledelicedespapilles {
+.menu.menu--lanoteenchantee {
   background-color: #fafbfc;
   color: #5262ad;
+  font-family: "Dancing Script", cursive;
+}
+.menu.menu--lanoteenchantee h1 {
+  background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu.menu--lanoteenchantee li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu.menu--lanoteenchantee span {
+  font-weight: bolder;
+}
+.menu.menu--lechicalafrancaise {
+  background-color: #fef7fa;
+  color: #c87629;
+  font-family: "Prata", serif;
+}
+.menu.menu--lechicalafrancaise li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu.menu--lechicalafrancaise span {
+  font-weight: bolder;
+}
+.menu.menu--lapalettedugout {
+  background-color: #fffffe;
+  color: #7fc566;
+  font-family: "Caveat", cursive;
+}
+.menu.menu--lapalettedugout li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu.menu--lapalettedugout span {
+  font-weight: bolder;
+}
+.menu.menu--ledelicedespapilles {
+  background-color: #ededed;
+  color: black;
   font-family: "Dancing Script", cursive;
 }
 .menu.menu--ledelicedespapilles h1 {
@@ -176,11 +228,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu.menu--ledelicedespapilles .menu__plat_price p {
-  font-family: "Dancing Script", cursive;
+.menu.menu--ledelicedespapilles li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.menu.menu--lechicalafrancaise {
-  background-color: #fef7fa;
+.menu.menu--ledelicedespapilles span {
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */

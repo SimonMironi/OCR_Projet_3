@@ -62,3 +62,10 @@
 //object-fit:cover;
 //balise pictures
 // transition: transform-scale(1.5);
+
+@mixin list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
