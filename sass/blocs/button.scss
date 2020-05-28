@@ -1,6 +1,7 @@
 a.btn {
     font-family: 'Poppins', sans-serif;
-    display: block;
+    display: flex;
+    flex-direction: row;
     width: fit-content;
     padding: 5px 20px;
     background-color: $header_footer_color;
