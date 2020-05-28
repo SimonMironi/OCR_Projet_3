@@ -6,9 +6,9 @@ footer {
     a {
         font-family: 'Poppins', sans-serif;
         color: $header_font_color;
-        /*a:hover {
-            
-        }*/
+        &:hover {
+        color: brown;
+        }
     }
 }
 
