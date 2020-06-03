@@ -10,11 +10,6 @@
             margin: 0px;
             transition: filter 700ms;
             position: absolute;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            top: 0;
-            position: absolute;
             z-index: -2;
             &:hover{
                 cursor: pointer;
@@ -31,6 +26,9 @@
                 @include Pacifico();
                 @include bigger_menu_title();
                 z-index: 1;
+                &:hover + .container__menus.container__menus--la_note_enchantee--background{
+                    filter: blur(5px);
+                }
             }       
 }
 .container__menus--le_chic_à_la_française{

@@ -51,6 +51,15 @@ footer a:hover {
   }
 }
 
+@-webkit-keyframes opacity-animation {
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  animation-delay: 0s;
+}
 a.btn {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -62,7 +71,62 @@ a.btn {
   border-radius: 7px;
   margin: 20px auto;
 }
+a.btn:hover .dot.one {
+  animation: opacity-animation 2s 0.66s ease-out infinite;
+}
+a.btn:hover .dot.two {
+  animation: opacity-animation 2s 1.32s ease-out infinite;
+}
+a.btn:hover .dot.three {
+  animation: opacity-animation 2s 2s ease-out infinite;
+}
 
+/* @-webkit-keyframes opacity-animation {
+  25%   { opacity: 0; }
+  100% { opacity: 1; }
+  animation-delay: 0s;
+}
+
+body{
+  height: 1000px;
+  width: 100%;
+  color: blue;
+}
+.btn{
+  height: 50px;
+  width: 200px;
+  background: #78DCB1;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  cursor: pointer;
+  &:hover {
+    .dot.one{
+      animation: opacity-animation 2s 0.66s ease-out infinite;
+    }
+
+    .dot.two{
+      animation: opacity-animation 2s 1.32s ease-out infinite;
+    }
+    .dot.three{
+      animation: opacity-animation 2s 2s ease-out infinite;
+    }
+  }
+}
+.dot{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: yellow;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+*/
 a {
   text-decoration: none;
   color: inherit;
@@ -114,11 +178,6 @@ body {
   margin: 0px;
   transition: filter 700ms;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  position: absolute;
   z-index: -2;
 }
 .container__menus--la_note_enchantee .container__menus.container__menus--la_note_enchantee--background:hover {
@@ -135,6 +194,9 @@ body {
   font-family: "Pacifico", cursive;
   font-size: 30px;
   z-index: 1;
+}
+.container__menus--la_note_enchantee h3:hover + .container__menus.container__menus--la_note_enchantee--background {
+  filter: blur(5px);
 }
 
 .container__menus--le_chic_à_la_française {
@@ -337,6 +399,22 @@ body {
   margin-bottom: auto;
   border-radius: 50%;
   background-color: #fbca46;
+  transition: transform 100ms ease-in-out;
 }
+
+/* &.one{
+        opacity: 100%;
+        transition: transform 150ms ease-in-out;
+        animation-delay: 0s;
+    }
+    &.two{
+        transition: transform 150ms ease-in-out;
+        animation-delay: 1s;
+    }
+    &.three{
+        transition: transform 150ms ease-in-out;
+        animation-delay: 2s;
+    }
+*/
 
 /*# sourceMappingURL=style.css.map */
