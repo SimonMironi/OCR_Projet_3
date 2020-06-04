@@ -82,52 +82,6 @@ a.btn:hover .dot.three {
   animation: opacity-animation 2s 2s ease-out infinite;
 }
 
-/* @-webkit-keyframes opacity-animation {
-  25%   { opacity: 0; }
-  100% { opacity: 1; }
-  animation-delay: 0s;
-}
-
-body{
-  height: 1000px;
-  width: 100%;
-  color: blue;
-}
-.btn{
-  height: 50px;
-  width: 200px;
-  background: #78DCB1;
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  cursor: pointer;
-  &:hover {
-    .dot.one{
-      animation: opacity-animation 2s 0.66s ease-out infinite;
-    }
-
-    .dot.two{
-      animation: opacity-animation 2s 1.32s ease-out infinite;
-    }
-    .dot.three{
-      animation: opacity-animation 2s 2s ease-out infinite;
-    }
-  }
-}
-.dot{
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: yellow;
-  margin-top: auto;
-  margin-bottom: auto;
-
-}
-*/
 a {
   text-decoration: none;
   color: inherit;
@@ -197,8 +151,9 @@ body {
   font-size: 30px;
   z-index: 1;
 }
-.container__menus--la_note_enchantee h3:hover + .container__menus.container__menus--la_note_enchantee--background {
+.container__menus--la_note_enchantee h3:hover + .container__menus--la_note_enchantee--background {
   filter: blur(5px);
+  scale: 1.5;
 }
 
 .container__menus--le_chic_à_la_française {
@@ -317,6 +272,10 @@ body {
   color: #6c4747;
   font-family: "Dancing Script", cursive;
 }
+.menu.menu--lanoteenchantee img {
+  height: 80px;
+  width: auto;
+}
 .menu.menu--lanoteenchantee .menu--title {
   display: flex;
   flex-direction: row;
@@ -349,6 +308,10 @@ body {
   left: 0%;
   width: 100%;
 }
+.menu.menu--lanoteenchantee .menu--title h2 img {
+  height: 20px;
+  width: auto;
+}
 .menu.menu--lanoteenchantee li {
   list-style: none;
   display: flex;
@@ -359,9 +322,46 @@ body {
   font-weight: bolder;
 }
 .menu.menu--lechicalafrancaise {
-  background-color: #fef7fa;
-  color: #c87629;
+  background-color: #fbdfdb;
+  color: #6c4747;
   font-family: "Prata", serif;
+}
+.menu.menu--lechicalafrancaise .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu.menu--lechicalafrancaise .menu--title .bar {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #6c4747;
+}
+.menu.menu--lechicalafrancaise .menu--title .bar h1 {
+  background: -webkit-linear-gradient(0deg, #c87629, #af9dcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu.menu--lechicalafrancaise .menu--title h2 {
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+}
+.menu.menu--lechicalafrancaise .menu--title h2::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #6c4747;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+}
+.menu.menu--lechicalafrancaise .menu--title h2:hover::after {
+  left: 0%;
+  width: 100%;
 }
 .menu.menu--lechicalafrancaise li {
   list-style: none;

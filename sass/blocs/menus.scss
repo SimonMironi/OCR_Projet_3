@@ -9,7 +9,7 @@
                 cursor: pointer;
                 z-index: 100;
                 filter: blur(5px);
-            }
+                }
             } 
             h2{
                 @include Pacifico();
@@ -20,8 +20,10 @@
                 @include Pacifico();
                 @include bigger_menu_title();
                 z-index: 1;
-                &:hover + .container__menus.container__menus--la_note_enchantee--background{
+                &:hover + .container__menus--la_note_enchantee--background{
+                    
                     filter: blur(5px);
+                    scale: 1.5;
                 }
             }       
 }
@@ -112,6 +114,10 @@
         background-color: $salmon;
         color: $font_brown;
         @include Dancing_Script();
+        img{
+            height: 80px;
+            width: auto;
+        }
         .menu--title{
             @include title--menu();
             .bar{
@@ -136,6 +142,10 @@
                     left:0%;
                     width: 100%;
                 }
+                img{
+                    height: 20px;
+                    width: auto;
+                }
             }
         }
         li{
@@ -147,9 +157,41 @@
     }
 
     &.menu--lechicalafrancaise {
-        background-color: $light_pink;
-        color: $font_gold_orange;
+        background-color: $salmon;
+        color: $font_brown;
         @include Prata();
+        .menu--title{
+            @include title--menu();
+            .bar{
+                @include title--bar();
+                background: $font_brown;
+                h1{
+                    @include gold_purple_gradient_text();
+                }
+            }
+            
+            h2{
+                min-width: 30%;
+                position: relative;
+                padding-bottom: 7px;
+                &::after{
+                    content: '';
+                    width: 0%;
+                    height: 3px;
+                    background-color: $font_brown;
+                    position: absolute;
+                    bottom: 0%; left: 0%;
+                    transition: all 500ms ease;
+                    border-radius: 10px;
+                }
+                &:hover::after{
+                    left:0%;
+                    width: 100%;
+                }
+            }
+        }
+        
+        
         li{
             @include list();
         }
