@@ -140,6 +140,7 @@ body {
   cursor: pointer;
   z-index: 100;
   filter: blur(5px);
+  background-size: 150%;
 }
 .container__menus--la_note_enchantee h2 {
   font-family: "Pacifico", cursive;
@@ -307,10 +308,6 @@ body {
 .menu.menu--lanoteenchantee .menu--title h2:hover::after {
   left: 0%;
   width: 100%;
-}
-.menu.menu--lanoteenchantee .menu--title h2 img {
-  height: 20px;
-  width: auto;
 }
 .menu.menu--lanoteenchantee li {
   list-style: none;

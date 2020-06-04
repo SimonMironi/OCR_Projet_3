@@ -9,6 +9,7 @@
                 cursor: pointer;
                 z-index: 100;
                 filter: blur(5px);
+                background-size: 150%;
                 }
             } 
             h2{
@@ -141,10 +142,6 @@
                 &:hover::after{
                     left:0%;
                     width: 100%;
-                }
-                img{
-                    height: 20px;
-                    width: auto;
                 }
             }
         }
