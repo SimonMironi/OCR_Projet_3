@@ -142,15 +142,27 @@
     width: 40%;
     height: auto;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+    
     &.menu--lanoteenchantee {
-        background-color: $light_blue;
-        color: $font_lavande;
+        background-color: $salmon;
+        color: $font_brown;
         @include Dancing_Script();
-         h1{
-            @include blue_gradient_text();
+        .menu--title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .bar{
+                height: 5px;
+                background: $font_brown;
+                width: -webkit-fill-available;
+                margin: auto;
+            }
+            h2{
+                min-width: 30%;
+            }
         }
         li{
             @include list();
@@ -159,6 +171,7 @@
             font-weight: bolder;
         }
     }
+
     &.menu--lechicalafrancaise {
         background-color: $light_pink;
         color: $font_gold_orange;
@@ -170,6 +183,7 @@
             font-weight: bolder;
         }
     }
+
     &.menu--lapalettedugout{
         background-color: $white;
         color: $font_green;
@@ -181,6 +195,7 @@
             font-weight: bolder;
         }
     }
+
     &.menu--ledelicedespapilles{
         background-color: $grey;
         color: black;

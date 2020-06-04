@@ -17,6 +17,7 @@ header a h1 {
   text-align: center;
   padding: 10px;
   font-family: "Catamaran", sans-serif;
+  margin: 0px;
 }
 
 footer {
@@ -320,19 +321,28 @@ body {
   width: 40%;
   height: auto;
   text-align: center;
-  padding: 30px;
+  padding: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .menu.menu--lanoteenchantee {
-  background-color: #fafbfc;
-  color: #5262ad;
+  background-color: #fbdfdb;
+  color: #6c4747;
   font-family: "Dancing Script", cursive;
 }
-.menu.menu--lanoteenchantee h1 {
-  background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.menu.menu--lanoteenchantee .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu.menu--lanoteenchantee .menu--title .bar {
+  height: 5px;
+  background: #6c4747;
+  width: -webkit-fill-available;
+  margin: auto;
+}
+.menu.menu--lanoteenchantee .menu--title h2 {
+  min-width: 30%;
 }
 .menu.menu--lanoteenchantee li {
   list-style: none;
