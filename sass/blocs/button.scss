@@ -1,9 +1,4 @@
-@-webkit-keyframes opacity-animation {
-    25%   { opacity: 0; }
-    100% { opacity: 1; }
-    animation-delay: 0s;
-  }
-
+@include keyframe--dots();
 a.btn {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -18,7 +13,6 @@ a.btn {
         .dot.one{
           animation: opacity-animation 2s 0.66s ease-out infinite;
         }
-        
         .dot.two{
           animation: opacity-animation 2s 1.32s ease-out infinite;
         }

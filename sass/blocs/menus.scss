@@ -5,12 +5,6 @@
         .container__menus.container__menus--la_note_enchantee--background{
             background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');
             @include background-image();
-            width: 100%;
-            height: 100%;
-            margin: 0px;
-            transition: filter 700ms;
-            position: absolute;
-            z-index: -2;
             &:hover{
                 cursor: pointer;
                 z-index: 100;
@@ -37,17 +31,6 @@
     .container__menus.container__menus--le_chic_à_la_française{
         background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');
         @include background-image();
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        transition: filter 700ms;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        top: 0;
-        position: absolute;
-        z-index: -2;
         &:hover{
             cursor: pointer;
             z-index: 1;
@@ -71,17 +54,6 @@
     .container__menus.container__menus--le_delice_des_papilles{
         background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/3.jpg');
         @include background-image();
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        transition: filter 700ms;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        top: 0;
-        position: absolute;
-        z-index: -2;
         &:hover{
             cursor: pointer;
             z-index: 1;
@@ -106,16 +78,6 @@
     .container__menus.container__menus--la_palette_du_gout{
         background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/4.jpg');
         @include background-image();
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        transition: filter 700ms;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        top: 0;
-        position: absolute;
-        z-index: -2;
         &:hover{
             z-index: 1;
             filter: blur(5px);
@@ -151,17 +113,29 @@
         color: $font_brown;
         @include Dancing_Script();
         .menu--title{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            @include title--menu();
             .bar{
-                height: 5px;
+                @include title--bar();
                 background: $font_brown;
-                width: -webkit-fill-available;
-                margin: auto;
             }
             h2{
                 min-width: 30%;
+                position: relative;
+                padding-bottom: 7px;
+                &::after{
+                    content: '';
+                    width: 0%;
+                    height: 3px;
+                    background-color: $font_brown;
+                    position: absolute;
+                    bottom: 0%; left: 0%;
+                    transition: all 500ms ease;
+                    border-radius: 10px;
+                }
+                &:hover::after{
+                    left:0%;
+                    width: 100%;
+                }
             }
         }
         li{
