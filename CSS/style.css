@@ -245,7 +245,7 @@ body {
   filter: blur(5px);
 }
 .container__menus--la_palette_du_gout h2 {
-  background: -webkit-linear-gradient(0deg, #7fc566, #c2dc76);
+  background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Caveat", cursive;
@@ -254,7 +254,7 @@ body {
 .container__menus--la_palette_du_gout h3 {
   font-family: "Caveat", cursive;
   font-size: 30px;
-  color: #7fc566;
+  color: #589d3f;
 }
 
 .menu {
@@ -293,17 +293,18 @@ body {
   min-width: 30%;
   position: relative;
   padding-bottom: 7px;
+  cursor: pointer;
 }
 .menu.menu--lanoteenchantee .menu--title h2::after {
   content: "";
   width: 0%;
   height: 3px;
-  background-color: #6c4747;
   position: absolute;
   bottom: 0%;
   left: 0%;
   transition: all 500ms ease;
   border-radius: 10px;
+  background-color: #6c4747;
 }
 .menu.menu--lanoteenchantee .menu--title h2:hover::after {
   left: 0%;
@@ -319,28 +320,51 @@ body {
   font-weight: bolder;
 }
 .menu.menu--lechicalafrancaise {
-  background-color: #fbdfdb;
-  color: #6c4747;
+  background-color: #fef7fa;
   font-family: "Prata", serif;
+}
+.menu.menu--lechicalafrancaise .bar {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #c87629;
+}
+.menu.menu--lechicalafrancaise .bar2 {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #5262ad;
+}
+.menu.menu--lechicalafrancaise .bar3 {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #af9dcb;
+}
+.menu.menu--lechicalafrancaise h1 {
+  background: -webkit-linear-gradient(0deg, #c87629, #af9dcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu.menu--lechicalafrancaise .menu__toptiers {
+  color: #c87629;
+}
+.menu.menu--lechicalafrancaise .menu__middletiers {
+  color: #5262ad;
+}
+.menu.menu--lechicalafrancaise .menu__bottomtiers {
+  color: #af9dcb;
 }
 .menu.menu--lechicalafrancaise .menu--title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu.menu--lechicalafrancaise .menu--title .bar {
-  height: 5px;
-  margin: auto;
-  width: -webkit-fill-available;
-  border-radius: 80%;
-  background: #6c4747;
-}
-.menu.menu--lechicalafrancaise .menu--title .bar h1 {
-  background: -webkit-linear-gradient(0deg, #c87629, #af9dcb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .menu.menu--lechicalafrancaise .menu--title h2 {
+  cursor: pointer;
   min-width: 30%;
   position: relative;
   padding-bottom: 7px;
@@ -349,7 +373,6 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background-color: #6c4747;
   position: absolute;
   bottom: 0%;
   left: 0%;
@@ -370,9 +393,13 @@ body {
   font-weight: bolder;
 }
 .menu.menu--lapalettedugout {
-  background-color: #fffffe;
-  color: #7fc566;
+  background-color: #fafbfc;
   font-family: "Caveat", cursive;
+}
+.menu.menu--lapalettedugout h1 {
+  background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu.menu--lapalettedugout li {
   list-style: none;
@@ -383,10 +410,58 @@ body {
 .menu.menu--lapalettedugout span {
   font-weight: bolder;
 }
+.menu.menu--lapalettedugout .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu.menu--lapalettedugout .menu--title h2 {
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+  padding: 10px;
+}
+.menu.menu--lapalettedugout .menu--title h2::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #589d3f;
+}
+.menu.menu--lapalettedugout .menu--title h2:hover::after {
+  left: 0%;
+  width: 100%;
+}
 .menu.menu--ledelicedespapilles {
   background-color: #ededed;
   color: black;
   font-family: "Dancing Script", cursive;
+}
+.menu.menu--ledelicedespapilles .bar {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #6b9bd2;
+}
+.menu.menu--ledelicedespapilles .bar2 {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #325a87;
+}
+.menu.menu--ledelicedespapilles .bar3 {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #193658;
 }
 .menu.menu--ledelicedespapilles h1 {
   background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
@@ -402,31 +477,32 @@ body {
 .menu.menu--ledelicedespapilles span {
   font-weight: bolder;
 }
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin-left: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-radius: 50%;
-  background-color: #fbca46;
-  transition: transform 100ms ease-in-out;
+.menu.menu--ledelicedespapilles .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-/* &.one{
-        opacity: 100%;
-        transition: transform 150ms ease-in-out;
-        animation-delay: 0s;
-    }
-    &.two{
-        transition: transform 150ms ease-in-out;
-        animation-delay: 1s;
-    }
-    &.three{
-        transition: transform 150ms ease-in-out;
-        animation-delay: 2s;
-    }
-*/
+.menu.menu--ledelicedespapilles .menu--title h2 {
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+  padding: 10px;
+}
+.menu.menu--ledelicedespapilles .menu--title h2::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #6b9bd2;
+}
+.menu.menu--ledelicedespapilles .menu--title h2:hover::after {
+  left: 0%;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

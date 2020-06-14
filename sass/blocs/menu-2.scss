@@ -1,0 +1,164 @@
+.menu {
+    @include center_element();
+    @include border-radius();
+    @include placement-menu();
+    
+    &.menu--lanoteenchantee {
+        background-color: $salmon;
+        color: $font_brown;
+        @include Dancing_Script();
+        img{
+            height: 80px;
+            width: auto;
+        }
+        .menu--title{
+            @include title--menu();
+            .bar{
+                @include title--bar();
+                background: $font_brown;
+            }
+            h2{
+                min-width: 30%;
+                position: relative;
+                padding-bottom: 7px;
+                cursor: pointer;
+                &::after{
+                    @include bottom-line-animation--1();
+                    background-color: $font_brown;
+                }
+                &:hover::after{
+                    @include bottom-line-animation--2();
+                }
+            }
+        }
+        li{
+            @include list();
+        }
+        span{
+            font-weight: bolder;
+        }
+    }
+
+    &.menu--lechicalafrancaise {
+        background-color: $light_pink;
+        @include Prata();
+        .bar{
+            @include title--bar();
+            background: $font_gold_orange;
+        }
+        .bar2{
+            @include title--bar();
+            background: $font_lavande;
+        }
+        .bar3{
+            @include title--bar();
+            background: $font_purple;
+        }
+        h1{
+            @include gold_purple_gradient_text();
+        }
+        .menu__toptiers{
+            color: $font_gold_orange;
+        }
+        .menu__middletiers{
+            color: $font_lavande;
+        }
+        .menu__bottomtiers{
+            color: $font_purple;
+        }
+        .menu--title{
+            @include title--menu();
+            h2{
+                cursor: pointer;
+                @include h2-page--menu();
+                &::after{
+                    @include bottom-line-animation--1();
+                }
+                &:hover::after{
+                    @include bottom-line-animation--2();
+                }
+            }
+        }
+        
+        
+        li{
+            @include list();
+        }
+        span{
+            font-weight: bolder;
+        }
+    }
+
+    &.menu--lapalettedugout{
+        background-color: $light_blue;
+        
+        h1{
+            @include green_gradient_text();
+        }
+        @include Caveat();
+        li{
+            @include list();
+        }
+        span{
+            font-weight: bolder;
+        }
+        .menu--title{
+            @include title--menu();
+                h2{
+                    cursor: pointer;
+                    @include h2-page--menu();
+                    padding: 10px;
+                    &::after{
+                        @include bottom-line-animation--1();
+                        background-color: $font_green;
+                    }
+                    &:hover::after{
+                        @include bottom-line-animation--2();
+                        }
+                    }
+                }
+    }
+
+    &.menu--ledelicedespapilles{
+        
+            background-color: $grey;
+            color: black;
+            .bar{
+                @include title--bar();
+                background: $font_lavande_light;
+            }
+            .bar2{
+                @include title--bar();
+                background: $blue2;
+            }
+            .bar3{
+                @include title--bar();
+                background: $blue3;
+            }
+            @include Dancing_Script();
+            h1{
+                @include blue_gradient_text();
+            }
+            li{
+                @include list();
+            }
+            span{
+                font-weight: bolder;
+            }
+            .menu--title{
+                @include title--menu();
+                    h2{
+                        cursor: pointer;
+                        @include h2-page--menu();
+                        padding: 10px;
+                        &::after{
+                            @include bottom-line-animation--1();
+                            background-color: $font_lavande_light;
+                        }
+                        &:hover::after{
+                            @include bottom-line-animation--2();
+                            }
+                        }
+                    }
+                }
+}

@@ -28,6 +28,7 @@
                 }
             }       
 }
+
 .container__menus--le_chic_à_la_française{
     @include text_center();
         position: relative;
@@ -50,7 +51,7 @@
         color: $font_gold_orange;
     }
 }
- 
+
 .container__menus--le_delice_des_papilles{
     @include text_center();
         position: relative;
@@ -99,128 +100,3 @@
     }
 }
 
-//Partie page menu 
-
-.menu {
-    @include center_element();
-    @include border-radius();
-    width: 40%;
-    height: auto;
-    text-align: center;
-    padding: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-    &.menu--lanoteenchantee {
-        background-color: $salmon;
-        color: $font_brown;
-        @include Dancing_Script();
-        img{
-            height: 80px;
-            width: auto;
-        }
-        .menu--title{
-            @include title--menu();
-            .bar{
-                @include title--bar();
-                background: $font_brown;
-            }
-            h2{
-                min-width: 30%;
-                position: relative;
-                padding-bottom: 7px;
-                &::after{
-                    content: '';
-                    width: 0%;
-                    height: 3px;
-                    background-color: $font_brown;
-                    position: absolute;
-                    bottom: 0%; left: 0%;
-                    transition: all 500ms ease;
-                    border-radius: 10px;
-                }
-                &:hover::after{
-                    left:0%;
-                    width: 100%;
-                }
-            }
-        }
-        li{
-            @include list();
-        }
-        span{
-            font-weight: bolder;
-        }
-    }
-
-    &.menu--lechicalafrancaise {
-        background-color: $salmon;
-        color: $font_brown;
-        @include Prata();
-        .menu--title{
-            @include title--menu();
-            .bar{
-                @include title--bar();
-                background: $font_brown;
-                h1{
-                    @include gold_purple_gradient_text();
-                }
-            }
-            
-            h2{
-                min-width: 30%;
-                position: relative;
-                padding-bottom: 7px;
-                &::after{
-                    content: '';
-                    width: 0%;
-                    height: 3px;
-                    background-color: $font_brown;
-                    position: absolute;
-                    bottom: 0%; left: 0%;
-                    transition: all 500ms ease;
-                    border-radius: 10px;
-                }
-                &:hover::after{
-                    left:0%;
-                    width: 100%;
-                }
-            }
-        }
-        
-        
-        li{
-            @include list();
-        }
-        span{
-            font-weight: bolder;
-        }
-    }
-
-    &.menu--lapalettedugout{
-        background-color: $white;
-        color: $font_green;
-        @include Caveat();
-        li{
-            @include list();
-        }
-        span{
-            font-weight: bolder;
-        }
-    }
-
-    &.menu--ledelicedespapilles{
-        background-color: $grey;
-        color: black;
-        @include Dancing_Script();
-        h1{
-            @include blue_gradient_text();
-        }
-        li{
-            @include list();
-        }
-        span{
-            font-weight: bolder;
-        }
-    }
-}

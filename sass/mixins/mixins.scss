@@ -92,3 +92,29 @@
         animation-delay: 0s;
       }
 }
+@mixin bottom-line-animation--1{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0%; left: 0%;
+    transition: all 500ms ease;
+    border-radius: 10px;
+}
+@mixin bottom-line-animation--2{
+    left:0%;
+    width: 100%;
+}
+@mixin h2-page--menu{
+    min-width: 30%;
+    position: relative;
+    padding-bottom: 7px;
+}
+@mixin placement-menu{
+    width: 40%;
+    height: auto;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
