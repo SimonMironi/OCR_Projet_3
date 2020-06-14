@@ -2,15 +2,11 @@
         @include text_center();
         color: $font_brown;
         position: relative;
+        overflow: hidden;
+        transition-duration: 3s;
         .container__menus.container__menus--la_note_enchantee--background{
             background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');
             @include background-image();
-            &:hover{
-                cursor: pointer;
-                z-index: 100;
-                filter: blur(5px);
-                background-size: 150%;
-                }
             } 
             h2{
                 @include Pacifico();
@@ -21,24 +17,30 @@
                 @include Pacifico();
                 @include bigger_menu_title();
                 z-index: 1;
-                &:hover + .container__menus--la_note_enchantee--background{
+               
                     
-                    filter: blur(5px);
-                    scale: 1.5;
                 }
-            }       
-}
+            } 
+            :hover{
+                .container__menus--la_note_enchantee--background{
+                    filter: blur(5px);
+                    transform: scale(1.2);
+                }      
+        }
 
 .container__menus--le_chic_à_la_française{
     @include text_center();
         position: relative;
-    .container__menus.container__menus--le_chic_à_la_française{
+        overflow: hidden;
+        transition-duration: 3s;
+    .container__menus.container__menus--le_chic_à_la_française--background{
         background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');
         @include background-image();
         &:hover{
             cursor: pointer;
-            z-index: 1;
+            z-index: 100;
             filter: blur(5px);
+            background-size: 150%;
         }
     }
     h2{
@@ -49,18 +51,25 @@
         @include Prata();
         @include bigger_menu_title();
         color: $font_gold_orange;
-    }
+    }}
+    :hover{
+        .container__menus--le_chic_à_la_française--background{
+            filter: blur(5px);
+            transform: scale(1.2);
+        }
 }
 
 .container__menus--le_delice_des_papilles{
     @include text_center();
         position: relative;
-    .container__menus.container__menus--le_delice_des_papilles{
+        overflow: hidden;
+        transition-duration: 3s;
+    .container__menus.container__menus--le_delice_des_papilles--background{
         background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/3.jpg');
         @include background-image();
         &:hover{
             cursor: pointer;
-            z-index: 1;
+            z-index: 100;
             filter: blur(5px);
         }
     }
@@ -74,16 +83,23 @@
         @include Dancing_Script();
         @include bigger_menu_title();
         color: $font_lavande;
-    }
+    }}
+    :hover{
+        .container__menus--le_delice_des_papilles--background{
+            filter: blur(5px);
+            transform: scale(1.2);
+        }
 } 
 .container__menus--la_palette_du_gout{
     @include text_center();
     position: relative;
-    .container__menus.container__menus--la_palette_du_gout{
+    overflow: hidden;
+    transition-duration: 3s;
+    .container__menus.container__menus--la_palette_du_gout--background{
         background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/4.jpg');
         @include background-image();
         &:hover{
-            z-index: 1;
+            z-index: 100;
             filter: blur(5px);
         }
     }
@@ -97,6 +113,11 @@
         @include Caveat();
         @include bigger_menu_title();
         color: $font_green;
-    }
+    }}
+    :hover{
+        .container__menus--la_palette_du_gout--background{
+            filter: blur(5px);
+            transform: scale(1.2);
+        }
 }
 

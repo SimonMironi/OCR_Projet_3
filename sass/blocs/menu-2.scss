@@ -91,7 +91,10 @@
 
     &.menu--lapalettedugout{
         background-color: $light_blue;
-        
+        .bar{
+            @include title--bar();
+            background: -webkit-linear-gradient(0deg, $font_green, $font_green_light);
+        }
         h1{
             @include green_gradient_text();
         }
