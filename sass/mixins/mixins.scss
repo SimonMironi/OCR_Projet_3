@@ -89,7 +89,6 @@
     @-webkit-keyframes opacity-animation {
         25%   { opacity: 0; }
         100% { opacity: 1; }
-        animation-delay: 0s;
       }
 }
 @mixin bottom-line-animation--1{

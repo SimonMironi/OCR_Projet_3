@@ -73,6 +73,7 @@
                 @include h2-page--menu();
                 &::after{
                     @include bottom-line-animation--1();
+                    background-color: $font_lavande;
                 }
                 &:hover::after{
                     @include bottom-line-animation--2();

@@ -1,123 +1,80 @@
-.container__menus--la_note_enchantee{
+.container__menus{
         @include text_center();
-        color: $font_brown;
         position: relative;
         overflow: hidden;
         transition-duration: 3s;
-        .container__menus.container__menus--la_note_enchantee--background{
-            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');
-            @include background-image();
-            } 
-            h2{
-                @include Pacifico();
-                font-weight: 300;
-                z-index: 1;
+            &.lne{
+                color: $font_brown;
+                h2{
+                    @include Pacifico();
+                    font-weight: 300;
+                    z-index: 1;}
+                h3{
+                    @include Pacifico();
+                    @include bigger_menu_title();
+                    z-index: 1;}
             }
-            h3{
-                @include Pacifico();
-                @include bigger_menu_title();
-                z-index: 1;
-               
-                    
+            &.lcalf{
+                h2{
+                    @include Prata();
+                    @include gold_purple_gradient_text();}
+                h3{
+                    @include Prata();
+                    @include bigger_menu_title();
+                    color: $font_gold_orange;}
                 }
-            } 
-            :hover{
-                .container__menus--la_note_enchantee--background{
-                    filter: blur(5px);
-                    transform: scale(1.2);
-                }      
-        }
+            &.lddp{
+                h2{
+                    @include Dancing_Script();
+                    font-size: 26px;
+                    @include blue_gradient_text();}
+                h3{
+                    @include Dancing_Script();
+                    @include bigger_menu_title();
+                    color: $font_lavande;}
+                }
+            &.lpdg{
+                h2{
+                    @include green_gradient_text();
+                    @include Caveat();
+                    font-size: 26px;
+                }
+                h3{
+                    @include Caveat();
+                    @include bigger_menu_title();
+                    color: $font_green;
+                }
+            }
+                    .container__menus--background{
+                        @include background-image();
+                        &.lne{
+                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');}
+                        &.lcalf{
+                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');}
+                        &.lddp{
+                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/3.jpg');}
+                        &.lpdg{
+                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/4.jpg');}
+                    }
+                            .container__menus--background:hover{
+                                    filter: blur(5px);
+                                    transform: scale(1.2);
+                                    background-size: 150%;
+                                
+                                }
+}
 
-.container__menus--le_chic_à_la_française{
-    @include text_center();
-        position: relative;
-        overflow: hidden;
-        transition-duration: 3s;
-    .container__menus.container__menus--le_chic_à_la_française--background{
-        background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');
-        @include background-image();
-        &:hover{
+
+        /*&:hover{
             cursor: pointer;
-            z-index: 100;
+            
             filter: blur(5px);
-            background-size: 150%;
-        }
-    }
-    h2{
-        @include Prata();
-        @include gold_purple_gradient_text();
-    }
-    h3{
-        @include Prata();
-        @include bigger_menu_title();
-        color: $font_gold_orange;
-    }}
-    :hover{
+        }*/
+
+    /*:hover{
         .container__menus--le_chic_à_la_française--background{
             filter: blur(5px);
             transform: scale(1.2);
-        }
-}
+        }*/
 
-.container__menus--le_delice_des_papilles{
-    @include text_center();
-        position: relative;
-        overflow: hidden;
-        transition-duration: 3s;
-    .container__menus.container__menus--le_delice_des_papilles--background{
-        background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/3.jpg');
-        @include background-image();
-        &:hover{
-            cursor: pointer;
-            z-index: 100;
-            filter: blur(5px);
-        }
-    }
-    
-    h2{
-        @include Dancing_Script();
-        font-size: 26px;
-        @include blue_gradient_text();
-    }
-    h3{
-        @include Dancing_Script();
-        @include bigger_menu_title();
-        color: $font_lavande;
-    }}
-    :hover{
-        .container__menus--le_delice_des_papilles--background{
-            filter: blur(5px);
-            transform: scale(1.2);
-        }
-} 
-.container__menus--la_palette_du_gout{
-    @include text_center();
-    position: relative;
-    overflow: hidden;
-    transition-duration: 3s;
-    .container__menus.container__menus--la_palette_du_gout--background{
-        background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/4.jpg');
-        @include background-image();
-        &:hover{
-            z-index: 100;
-            filter: blur(5px);
-        }
-    }
- 
-    h2{
-        @include green_gradient_text();
-        @include Caveat();
-        font-size: 26px;
-    }
-    h3{
-        @include Caveat();
-        @include bigger_menu_title();
-        color: $font_green;
-    }}
-    :hover{
-        .container__menus--la_palette_du_gout--background{
-            filter: blur(5px);
-            transform: scale(1.2);
-        }
-}
 

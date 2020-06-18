@@ -12,12 +12,15 @@ a.btn {
     &:hover {
         .dot.one{
           animation: opacity-animation 2s 0.66s ease-out infinite;
+          
         }
         .dot.two{
           animation: opacity-animation 2s 1.32s ease-out infinite;
+          
         }
         .dot.three{
           animation: opacity-animation 2s 2s ease-out infinite;
+          
         }
       }
     }
