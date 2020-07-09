@@ -68,12 +68,34 @@
         }
         .menu--title{
             @include title--menu();
-            h2{
+            h2.gold{
+                cursor: pointer;
+                @include h2-page--menu();
+                &::after{
+                    @include bottom-line-animation--1();
+                    background-color: $font_gold_orange;
+                }
+                &:hover::after{
+                    @include bottom-line-animation--2();
+                }
+            }
+            h2.blue{
                 cursor: pointer;
                 @include h2-page--menu();
                 &::after{
                     @include bottom-line-animation--1();
                     background-color: $font_lavande;
+                }
+                &:hover::after{
+                    @include bottom-line-animation--2();
+                }
+            }
+            h2.purple{
+                cursor: pointer;
+                @include h2-page--menu();
+                &::after{
+                    @include bottom-line-animation--1();
+                    background-color: $font_purple;
                 }
                 &:hover::after{
                     @include bottom-line-animation--2();
@@ -151,7 +173,7 @@
             }
             .menu--title{
                 @include title--menu();
-                    h2{
+                    h2.blue1{
                         cursor: pointer;
                         @include h2-page--menu();
                         padding: 10px;
@@ -163,6 +185,30 @@
                             @include bottom-line-animation--2();
                             }
                         }
+                        h2.blue2{
+                            cursor: pointer;
+                            @include h2-page--menu();
+                            padding: 10px;
+                            &::after{
+                                @include bottom-line-animation--1();
+                                background-color: $blue2;
+                            }
+                            &:hover::after{
+                                @include bottom-line-animation--2();
+                                }
+                            }
+                        h2.blue3{
+                            cursor: pointer;
+                            @include h2-page--menu();
+                            padding: 10px;
+                            &::after{
+                                @include bottom-line-animation--1();
+                                background-color: $blue3;
+                                }
+                            &:hover::after{
+                                @include bottom-line-animation--2();
+                                }
+                            }
                     }
                 }
 }

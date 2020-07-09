@@ -122,10 +122,15 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  transition-duration: 3s;
+}
+.container__menus:hover .container__menus--background {
+  filter: blur(5px);
+  transform: scale(1.2);
+  transition: 1.2s;
 }
 .container__menus.lne {
   color: #6c4747;
+  background-size: cover;
 }
 .container__menus.lne h2 {
   font-family: "Pacifico", cursive;
@@ -182,23 +187,19 @@ body {
   transition: filter 700ms;
   position: absolute;
   z-index: -2;
+  transition: 1.2s;
 }
 .container__menus .container__menus--background.lne {
-  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/1.jpg");
+  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/1.jpg");
 }
 .container__menus .container__menus--background.lcalf {
-  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/2.jpg");
+  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/2.jpg");
 }
 .container__menus .container__menus--background.lddp {
-  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/3.jpg");
+  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/3.jpg");
 }
 .container__menus .container__menus--background.lpdg {
-  background: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/4.jpg");
-}
-.container__menus .container__menus--background:hover {
-  filter: blur(5px);
-  transform: scale(1.2);
-  background-size: 150%;
+  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/4.jpg");
 }
 
 /*&:hover{
@@ -317,13 +318,34 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu.menu--lechicalafrancaise .menu--title h2 {
+.menu.menu--lechicalafrancaise .menu--title h2.gold {
   cursor: pointer;
   min-width: 30%;
   position: relative;
   padding-bottom: 7px;
 }
-.menu.menu--lechicalafrancaise .menu--title h2::after {
+.menu.menu--lechicalafrancaise .menu--title h2.gold::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #c87629;
+}
+.menu.menu--lechicalafrancaise .menu--title h2.gold:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.menu.menu--lechicalafrancaise .menu--title h2.blue {
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+}
+.menu.menu--lechicalafrancaise .menu--title h2.blue::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -334,7 +356,28 @@ body {
   border-radius: 10px;
   background-color: #5262ad;
 }
-.menu.menu--lechicalafrancaise .menu--title h2:hover::after {
+.menu.menu--lechicalafrancaise .menu--title h2.blue:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.menu.menu--lechicalafrancaise .menu--title h2.purple {
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+}
+.menu.menu--lechicalafrancaise .menu--title h2.purple::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #af9dcb;
+}
+.menu.menu--lechicalafrancaise .menu--title h2.purple:hover::after {
   left: 0%;
   width: 100%;
 }
@@ -444,14 +487,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu.menu--ledelicedespapilles .menu--title h2 {
+.menu.menu--ledelicedespapilles .menu--title h2.blue1 {
   cursor: pointer;
   min-width: 30%;
   position: relative;
   padding-bottom: 7px;
   padding: 10px;
 }
-.menu.menu--ledelicedespapilles .menu--title h2::after {
+.menu.menu--ledelicedespapilles .menu--title h2.blue1::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -462,7 +505,51 @@ body {
   border-radius: 10px;
   background-color: #6b9bd2;
 }
-.menu.menu--ledelicedespapilles .menu--title h2:hover::after {
+.menu.menu--ledelicedespapilles .menu--title h2.blue1:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.menu.menu--ledelicedespapilles .menu--title h2.blue2 {
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+  padding: 10px;
+}
+.menu.menu--ledelicedespapilles .menu--title h2.blue2::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #325a87;
+}
+.menu.menu--ledelicedespapilles .menu--title h2.blue2:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.menu.menu--ledelicedespapilles .menu--title h2.blue3 {
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+  padding: 10px;
+}
+.menu.menu--ledelicedespapilles .menu--title h2.blue3::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #193658;
+}
+.menu.menu--ledelicedespapilles .menu--title h2.blue3:hover::after {
   left: 0%;
   width: 100%;
 }

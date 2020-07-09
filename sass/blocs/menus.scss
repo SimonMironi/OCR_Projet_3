@@ -2,9 +2,14 @@
         @include text_center();
         position: relative;
         overflow: hidden;
-        transition-duration: 3s;
+        &:hover .container__menus--background{
+            filter: blur(5px);
+            transform: scale(1.2);
+            transition: 1.2s;
+        }
             &.lne{
                 color: $font_brown;
+                background-size: cover;
                 h2{
                     @include Pacifico();
                     font-weight: 300;
@@ -47,21 +52,16 @@
             }
                     .container__menus--background{
                         @include background-image();
+                        transition: 1.2s;
                         &.lne{
-                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');}
+                            background-image: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/1.jpg');}
                         &.lcalf{
-                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');}
+                            background-image: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/2.jpg');}
                         &.lddp{
-                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/3.jpg');}
+                            background-image: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/3.jpg');}
                         &.lpdg{
-                            background: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/4.jpg');}
+                            background-image: linear-gradient(183deg, rgba(255,255,255,0.47692580450148814) 0%, rgba(255,255,255,0.5049370089832808) 100%), url('../Ressources/Images/4.jpg');}
                     }
-                            .container__menus--background:hover{
-                                    filter: blur(5px);
-                                    transform: scale(1.2);
-                                    background-size: 150%;
-                                
-                                }
 }
 
 
