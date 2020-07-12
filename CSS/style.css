@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
@@ -26,6 +25,11 @@ footer {
   background-color: #549d88;
   justify-content: space-between;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
 }
 footer a {
   font-family: "Poppins", sans-serif;
@@ -71,13 +75,13 @@ a.btn {
   border-radius: 7px;
   margin: 20px auto;
 }
-a.btn:hover .dot.one {
+a.btn .dot.one {
   animation: opacity-animation 2s 0.66s ease-out infinite;
 }
-a.btn:hover .dot.two {
+a.btn .dot.two {
   animation: opacity-animation 2s 1.32s ease-out infinite;
 }
-a.btn:hover .dot.three {
+a.btn .dot.three {
   animation: opacity-animation 2s 2s ease-out infinite;
 }
 
@@ -106,9 +110,7 @@ body {
   margin-top: 60px;
 }
 .container .container__menus {
-  -webkit-box-shadow: 0px 0px 11px 0px #737273;
-  -moz-box-shadow: 0px 0px 11px 0px #737273;
-  box-shadow: 0px 0px 11px 0px #737273;
+  box-shadow: 0px 0px 11px 0px #a5a4a5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +126,10 @@ body {
   overflow: hidden;
 }
 .container__menus:hover .container__menus--background {
-  filter: blur(5px);
+  filter: opacity(40%);
+  transition: 1.2s;
+}
+.container__menus:hover h2 {
   transform: scale(1.2);
   transition: 1.2s;
 }
@@ -134,6 +139,7 @@ body {
 }
 .container__menus.lne h2 {
   font-family: "Pacifico", cursive;
+  transition: 1.2s;
   font-weight: 300;
   z-index: 1;
 }
@@ -144,17 +150,20 @@ body {
 }
 .container__menus.lcalf h2 {
   font-family: "Prata", serif;
+  transition: 1.2s;
   background: -webkit-linear-gradient(0deg, #c87629, #af9dcb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .container__menus.lcalf h3 {
   font-family: "Prata", serif;
+  transition: 1.2s;
   font-size: 30px;
   color: #c87629;
 }
 .container__menus.lddp h2 {
   font-family: "Dancing Script", cursive;
+  transition: 1.2s;
   font-size: 26px;
   background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
   -webkit-background-clip: text;
@@ -169,6 +178,7 @@ body {
   background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 1.2s;
   font-family: "Caveat", cursive;
   font-size: 26px;
 }
@@ -190,28 +200,18 @@ body {
   transition: 1.2s;
 }
 .container__menus .container__menus--background.lne {
-  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/1.jpg");
+  background-color: #fbdfdb;
 }
 .container__menus .container__menus--background.lcalf {
-  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/2.jpg");
+  background-color: #fef7fa;
 }
 .container__menus .container__menus--background.lddp {
-  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/3.jpg");
+  background-color: #eeefef;
 }
 .container__menus .container__menus--background.lpdg {
-  background-image: linear-gradient(183deg, rgba(255, 255, 255, 0.4769258045) 0%, rgba(255, 255, 255, 0.504937009) 100%), url("../Ressources/Images/4.jpg");
+  background-color: #f8f9fa;
 }
 
-/*&:hover{
-    cursor: pointer;
-
-    filter: blur(5px);
-}*/
-/*:hover{
-    .container__menus--le_chic_à_la_française--background{
-        filter: blur(5px);
-        transform: scale(1.2);
-    }*/
 .menu {
   margin-left: auto;
   margin-right: auto;
@@ -391,7 +391,7 @@ body {
   font-weight: bolder;
 }
 .menu.menu--lapalettedugout {
-  background-color: #fafbfc;
+  background-color: #eeefef;
   font-family: "Caveat", cursive;
 }
 .menu.menu--lapalettedugout .bar {
@@ -563,6 +563,11 @@ body {
   border-radius: 50%;
   background-color: #fbca46;
   transition: transform 100ms ease-in-out;
+}
+
+body {
+  min-height: 1160px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
