@@ -102,10 +102,13 @@
     left:0%;
     width: 100%;
 }
-@mixin h2-page--menu{
+@mixin h4-page--menu{
     min-width: 30%;
     position: relative;
     padding-bottom: 7px;
+}
+@mixin h4--min-width{
+    min-width: 35%;
 }
 @mixin placement-menu{
     width: 40%;

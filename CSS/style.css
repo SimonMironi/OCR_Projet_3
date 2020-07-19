@@ -212,7 +212,20 @@ body {
   background-color: #f8f9fa;
 }
 
-.menu {
+.container--singlemenu {
+  height: auto;
+  text-align: center;
+}
+.container--singlemenu li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container--singlemenu span {
+  font-weight: bolder;
+}
+.container--singlemenu .menu {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
@@ -223,278 +236,64 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.menu.menu--lanoteenchantee {
-  background-color: #fbdfdb;
-  color: #6c4747;
+.container--singlemenu h2 {
+  margin-top: 50px;
+}
+.container--singlemenu h4 {
+  font-size: 24px;
+  min-width: 35%;
+}
+.container--singlemenu.ldp {
   font-family: "Dancing Script", cursive;
 }
-.menu.menu--lanoteenchantee img {
-  height: 80px;
-  width: auto;
-}
-.menu.menu--lanoteenchantee .menu--title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--lanoteenchantee .menu--title .bar {
-  height: 5px;
-  margin: auto;
-  width: -webkit-fill-available;
-  border-radius: 80%;
-  background: #6c4747;
-}
-.menu.menu--lanoteenchantee .menu--title h2 {
-  min-width: 30%;
-  position: relative;
-  padding-bottom: 7px;
-  cursor: pointer;
-}
-.menu.menu--lanoteenchantee .menu--title h2::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  transition: all 500ms ease;
-  border-radius: 10px;
-  background-color: #6c4747;
-}
-.menu.menu--lanoteenchantee .menu--title h2:hover::after {
-  left: 0%;
-  width: 100%;
-}
-.menu.menu--lanoteenchantee li {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--lanoteenchantee span {
-  font-weight: bolder;
-}
-.menu.menu--lechicalafrancaise {
-  background-color: #fef7fa;
-  font-family: "Prata", serif;
-}
-.menu.menu--lechicalafrancaise .bar {
-  height: 5px;
-  margin: auto;
-  width: -webkit-fill-available;
-  border-radius: 80%;
-  background: #c87629;
-}
-.menu.menu--lechicalafrancaise .bar2 {
-  height: 5px;
-  margin: auto;
-  width: -webkit-fill-available;
-  border-radius: 80%;
-  background: #5262ad;
-}
-.menu.menu--lechicalafrancaise .bar3 {
-  height: 5px;
-  margin: auto;
-  width: -webkit-fill-available;
-  border-radius: 80%;
-  background: #af9dcb;
-}
-.menu.menu--lechicalafrancaise h1 {
-  background: -webkit-linear-gradient(0deg, #c87629, #af9dcb);
+.container--singlemenu.ldp h3 {
+  background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu.menu--lechicalafrancaise .menu__toptiers {
-  color: #c87629;
+.container--singlemenu.ldp h4 {
+  font-family: "Dancing Script", cursive;
 }
-.menu.menu--lechicalafrancaise .menu__middletiers {
-  color: #5262ad;
-}
-.menu.menu--lechicalafrancaise .menu__bottomtiers {
-  color: #af9dcb;
-}
-.menu.menu--lechicalafrancaise .menu--title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.gold {
-  cursor: pointer;
-  min-width: 30%;
-  position: relative;
-  padding-bottom: 7px;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.gold::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  transition: all 500ms ease;
-  border-radius: 10px;
-  background-color: #c87629;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.gold:hover::after {
-  left: 0%;
-  width: 100%;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.blue {
-  cursor: pointer;
-  min-width: 30%;
-  position: relative;
-  padding-bottom: 7px;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.blue::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  transition: all 500ms ease;
-  border-radius: 10px;
-  background-color: #5262ad;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.blue:hover::after {
-  left: 0%;
-  width: 100%;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.purple {
-  cursor: pointer;
-  min-width: 30%;
-  position: relative;
-  padding-bottom: 7px;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.purple::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  transition: all 500ms ease;
-  border-radius: 10px;
-  background-color: #af9dcb;
-}
-.menu.menu--lechicalafrancaise .menu--title h2.purple:hover::after {
-  left: 0%;
-  width: 100%;
-}
-.menu.menu--lechicalafrancaise li {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--lechicalafrancaise span {
-  font-weight: bolder;
-}
-.menu.menu--lapalettedugout {
-  background-color: #eeefef;
-  font-family: "Caveat", cursive;
-}
-.menu.menu--lapalettedugout .bar {
-  height: 5px;
-  margin: auto;
-  width: -webkit-fill-available;
-  border-radius: 80%;
-  background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
-}
-.menu.menu--lapalettedugout h1 {
-  background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu.menu--lapalettedugout li {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--lapalettedugout span {
-  font-weight: bolder;
-}
-.menu.menu--lapalettedugout .menu--title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--lapalettedugout .menu--title h2 {
-  cursor: pointer;
-  min-width: 30%;
-  position: relative;
-  padding-bottom: 7px;
-  padding: 10px;
-}
-.menu.menu--lapalettedugout .menu--title h2::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  transition: all 500ms ease;
-  border-radius: 10px;
-  background-color: #589d3f;
-}
-.menu.menu--lapalettedugout .menu--title h2:hover::after {
-  left: 0%;
-  width: 100%;
-}
-.menu.menu--ledelicedespapilles {
+.container--singlemenu.ldp .menu {
   background-color: #ededed;
   color: black;
-  font-family: "Dancing Script", cursive;
 }
-.menu.menu--ledelicedespapilles .bar {
+.container--singlemenu.ldp .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container--singlemenu.ldp .menu--title .bar {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
   border-radius: 80%;
   background: #6b9bd2;
 }
-.menu.menu--ledelicedespapilles .bar2 {
+.container--singlemenu.ldp .menu--title .bar2 {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
   border-radius: 80%;
   background: #325a87;
 }
-.menu.menu--ledelicedespapilles .bar3 {
+.container--singlemenu.ldp .menu--title .bar3 {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
   border-radius: 80%;
   background: #193658;
 }
-.menu.menu--ledelicedespapilles h1 {
-  background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.container--singlemenu.ldp .menu--title h4 {
+  padding: 10px;
 }
-.menu.menu--ledelicedespapilles li {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--ledelicedespapilles span {
-  font-weight: bolder;
-}
-.menu.menu--ledelicedespapilles .menu--title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu.menu--ledelicedespapilles .menu--title h2.blue1 {
+.container--singlemenu.ldp .menu--title h4.blue1 {
   cursor: pointer;
   min-width: 30%;
   position: relative;
   padding-bottom: 7px;
-  padding: 10px;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue1::after {
+.container--singlemenu.ldp .menu--title h4.blue1::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -505,18 +304,17 @@ body {
   border-radius: 10px;
   background-color: #6b9bd2;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue1:hover::after {
+.container--singlemenu.ldp .menu--title h4.blue1:hover::after {
   left: 0%;
   width: 100%;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue2 {
+.container--singlemenu.ldp .menu--title h4.blue2 {
   cursor: pointer;
   min-width: 30%;
   position: relative;
   padding-bottom: 7px;
-  padding: 10px;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue2::after {
+.container--singlemenu.ldp .menu--title h4.blue2::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -527,18 +325,17 @@ body {
   border-radius: 10px;
   background-color: #325a87;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue2:hover::after {
+.container--singlemenu.ldp .menu--title h4.blue2:hover::after {
   left: 0%;
   width: 100%;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue3 {
+.container--singlemenu.ldp .menu--title h4.blue3 {
   cursor: pointer;
   min-width: 30%;
   position: relative;
   padding-bottom: 7px;
-  padding: 10px;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue3::after {
+.container--singlemenu.ldp .menu--title h4.blue3::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -549,7 +346,220 @@ body {
   border-radius: 10px;
   background-color: #193658;
 }
-.menu.menu--ledelicedespapilles .menu--title h2.blue3:hover::after {
+.container--singlemenu.ldp .menu--title h4.blue3:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.container--singlemenu.lne h2 {
+  font-family: "Dancing Script", cursive;
+}
+.container--singlemenu.lne .menu {
+  background-color: #fbdfdb;
+  color: #6c4747;
+  font-family: "Dancing Script", cursive;
+}
+.container--singlemenu.lne .menu img {
+  height: 80px;
+  width: auto;
+}
+.container--singlemenu.lne .menu img.img_titre {
+  height: 40px;
+  width: auto;
+  margin-bottom: -15px;
+  margin-right: 15px;
+}
+.container--singlemenu.lne .menu .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container--singlemenu.lne .menu .menu--title .bar {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #6c4747;
+}
+.container--singlemenu.lne .menu .menu--title h4 {
+  min-width: 35%;
+  position: relative;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+.container--singlemenu.lne .menu .menu--title h4::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #6c4747;
+}
+.container--singlemenu.lne .menu .menu--title h4:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.container--singlemenu.lcaf h2 {
+  font-family: "Prata", serif;
+}
+.container--singlemenu.lcaf .menu {
+  background-color: #fef7fa;
+  font-family: "Prata", serif;
+}
+.container--singlemenu.lcaf .menu h3 {
+  background: -webkit-linear-gradient(0deg, #c87629, #af9dcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+}
+.container--singlemenu.lcaf .menu .bar {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #c87629;
+}
+.container--singlemenu.lcaf .menu .bar2 {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #5262ad;
+}
+.container--singlemenu.lcaf .menu .bar3 {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: #af9dcb;
+}
+.container--singlemenu.lcaf .menu .menu__toptiers {
+  color: #c87629;
+}
+.container--singlemenu.lcaf .menu .menu__middletiers {
+  color: #5262ad;
+}
+.container--singlemenu.lcaf .menu .menu__bottomtiers {
+  color: #af9dcb;
+}
+.container--singlemenu.lcaf .menu .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container--singlemenu.lcaf .menu .menu--title h4 {
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+}
+.container--singlemenu.lcaf .menu .menu--title h4.purple::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #af9dcb;
+}
+.container--singlemenu.lcaf .menu .menu--title h4.purple:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.container--singlemenu.lcaf .menu .menu--title h4.blue::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #5262ad;
+}
+.container--singlemenu.lcaf .menu .menu--title h4.blue:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.container--singlemenu.lcaf .menu .menu--title h4.gold::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #c87629;
+}
+.container--singlemenu.lcaf .menu .menu--title h4.gold:hover::after {
+  left: 0%;
+  width: 100%;
+}
+.container--singlemenu.lpdg {
+  font-family: "Caveat", cursive;
+}
+.container--singlemenu.lpdg .menu {
+  background-color: #eeefef;
+}
+.container--singlemenu.lpdg .menu h3 {
+  font-size: 25px;
+  margin-top: 0px;
+}
+.container--singlemenu.lpdg .menu .bar {
+  height: 5px;
+  margin: auto;
+  width: -webkit-fill-available;
+  border-radius: 80%;
+  background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
+}
+.container--singlemenu.lpdg .menu .bar.rot {
+  transform: rotate(180deg);
+}
+.container--singlemenu.lpdg .menu h1 {
+  background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container--singlemenu.lpdg .menu li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container--singlemenu.lpdg .menu span {
+  font-weight: bolder;
+}
+.container--singlemenu.lpdg .menu .menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container--singlemenu.lpdg .menu .menu--title h4 {
+  cursor: pointer;
+  min-width: 30%;
+  position: relative;
+  padding-bottom: 7px;
+  padding: 10px;
+}
+.container--singlemenu.lpdg .menu .menu--title h4::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 500ms ease;
+  border-radius: 10px;
+  background-color: #589d3f;
+}
+.container--singlemenu.lpdg .menu .menu--title h4:hover::after {
   left: 0%;
   width: 100%;
 }

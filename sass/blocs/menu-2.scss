@@ -1,154 +1,40 @@
-.menu {
-    @include center_element();
-    @include border-radius();
-    @include placement-menu();
+.container--singlemenu{
+    height: auto;
+    text-align: center;
     
-    &.menu--lanoteenchantee {
-        background-color: $salmon;
-        color: $font_brown;
+    li{
+        @include list();
+    }
+    span{
+        font-weight: bolder;
+    }
+    .menu {
+        @include center_element();
+        @include border-radius();
+        @include placement-menu();   
+    }
+    h2{
+        margin-top: 50px;
+    }
+    h4{
+        font-size: 24px;
+        @include h4--min-width();
+    }
+    
+    &.ldp{
         @include Dancing_Script();
-        img{
-            height: 80px;
-            width: auto;
+        h3{
+            @include blue_gradient_text();
         }
-        .menu--title{
-            @include title--menu();
-            .bar{
-                @include title--bar();
-                background: $font_brown;
-            }
-            h2{
-                min-width: 30%;
-                position: relative;
-                padding-bottom: 7px;
-                cursor: pointer;
-                &::after{
-                    @include bottom-line-animation--1();
-                    background-color: $font_brown;
-                }
-                &:hover::after{
-                    @include bottom-line-animation--2();
-                }
-            }
+        h4{
+            @include Dancing_Script();
         }
-        li{
-            @include list();
-        }
-        span{
-            font-weight: bolder;
-        }
-    }
-
-    &.menu--lechicalafrancaise {
-        background-color: $light_pink;
-        @include Prata();
-        .bar{
-            @include title--bar();
-            background: $font_gold_orange;
-        }
-        .bar2{
-            @include title--bar();
-            background: $font_lavande;
-        }
-        .bar3{
-            @include title--bar();
-            background: $font_purple;
-        }
-        h1{
-            @include gold_purple_gradient_text();
-        }
-        .menu__toptiers{
-            color: $font_gold_orange;
-        }
-        .menu__middletiers{
-            color: $font_lavande;
-        }
-        .menu__bottomtiers{
-            color: $font_purple;
-        }
-        .menu--title{
-            @include title--menu();
-            h2.gold{
-                cursor: pointer;
-                @include h2-page--menu();
-                &::after{
-                    @include bottom-line-animation--1();
-                    background-color: $font_gold_orange;
-                }
-                &:hover::after{
-                    @include bottom-line-animation--2();
-                }
-            }
-            h2.blue{
-                cursor: pointer;
-                @include h2-page--menu();
-                &::after{
-                    @include bottom-line-animation--1();
-                    background-color: $font_lavande;
-                }
-                &:hover::after{
-                    @include bottom-line-animation--2();
-                }
-            }
-            h2.purple{
-                cursor: pointer;
-                @include h2-page--menu();
-                &::after{
-                    @include bottom-line-animation--1();
-                    background-color: $font_purple;
-                }
-                &:hover::after{
-                    @include bottom-line-animation--2();
-                }
-            }
-        }
-        
-        
-        li{
-            @include list();
-        }
-        span{
-            font-weight: bolder;
-        }
-    }
-
-    &.menu--lapalettedugout{
-        background-color: $light_blue;
-        .bar{
-            @include title--bar();
-            background: -webkit-linear-gradient(0deg, $font_green, $font_green_light);
-        }
-        h1{
-            @include green_gradient_text();
-        }
-        @include Caveat();
-        li{
-            @include list();
-        }
-        span{
-            font-weight: bolder;
-        }
-        .menu--title{
-            @include title--menu();
-                h2{
-                    cursor: pointer;
-                    @include h2-page--menu();
-                    padding: 10px;
-                    &::after{
-                        @include bottom-line-animation--1();
-                        background-color: $font_green;
-                    }
-                    &:hover::after{
-                        @include bottom-line-animation--2();
-                        }
-                    }
-                }
-    }
-
-    &.menu--ledelicedespapilles{
-        
+        .menu{
             background-color: $grey;
             color: black;
+        }
+        .menu--title{
+            @include title--menu();
             .bar{
                 @include title--bar();
                 background: $font_lavande_light;
@@ -161,9 +47,174 @@
                 @include title--bar();
                 background: $blue3;
             }
+            h4{
+                padding: 10px;
+                &.blue1{
+                    cursor: pointer;
+                    @include h4-page--menu();
+                    &::after{
+                        @include bottom-line-animation--1();
+                        background-color: $font_lavande_light;
+                    }
+                    &:hover::after{
+                        @include bottom-line-animation--2();
+                        }
+                    }
+                &.blue2{
+                    cursor: pointer;
+                    @include h4-page--menu();
+                    &::after{
+                        @include bottom-line-animation--1();
+                        background-color: $blue2;
+                    }
+                    &:hover::after{
+                        @include bottom-line-animation--2();
+                        }
+                    }
+                &.blue3{
+                    cursor: pointer;
+                    @include h4-page--menu();
+                    &::after{
+                        @include bottom-line-animation--1();
+                        background-color: $blue3;
+                    }
+                    &:hover::after{
+                        @include bottom-line-animation--2();
+                        }
+                    }
+            }
+        }        
+    }
+    &.lne{
+        h2{
             @include Dancing_Script();
+        }
+        .menu{
+            background-color: $salmon;
+            color: $font_brown;
+            @include Dancing_Script();
+            img{
+                height: 80px;
+                width: auto;
+            }
+            img.img_titre{
+                height: 40px;
+                width: auto;
+                margin-bottom: -15px;
+                margin-right: 15px;
+            }
+            .menu--title{
+                @include title--menu();
+                .bar{
+                    @include title--bar();
+                    background: $font_brown;
+                }
+                h4{
+                    @include h4--min-width();
+                    position: relative;
+                    padding-bottom: 7px;
+                    cursor: pointer;
+                        &::after{
+                            @include bottom-line-animation--1();
+                            background-color: $font_brown;
+                        }
+                        &:hover::after{
+                            @include bottom-line-animation--2();
+                        }
+                        
+                    }
+                }
+            }  
+    }
+    
+    &.lcaf{
+        h2{
+            @include Prata();
+        }
+        .menu{
+            background-color: $light_pink;
+            @include Prata();
+            h3{
+                @include gold_purple_gradient_text();
+                font-size: 25px;
+            }
+                .bar{
+                    @include title--bar();
+                    background: $font_gold_orange;
+                }
+                .bar2{
+                    @include title--bar();
+                    background: $font_lavande;
+                }
+                .bar3{
+                    @include title--bar();
+                    background: $font_purple;
+                }
+                    .menu__toptiers{
+                        color: $font_gold_orange;
+                    }
+                    .menu__middletiers{
+                        color: $font_lavande;
+                    }
+                    .menu__bottomtiers{
+                        color: $font_purple;
+                    }
+                        .menu--title{
+                            @include title--menu();
+                            h4{
+                                font-size: 18px;
+                                padding: 5px;
+                                cursor: pointer;
+                                @include h4-page--menu();
+                                &.purple{
+                                    &::after{
+                                        @include bottom-line-animation--1();
+                                        background-color: $font_purple;
+                                    }
+                                    &:hover::after{
+                                        @include bottom-line-animation--2();
+                                    }
+                                }
+                                &.blue{
+                                    &::after{
+                                        @include bottom-line-animation--1();
+                                        background-color: $font_lavande;
+                                    }
+                                    &:hover::after{
+                                        @include bottom-line-animation--2();
+                                    }
+                                }
+                                &.gold{
+                                    &::after{
+                                        @include bottom-line-animation--1();
+                                        background-color: $font_gold_orange;
+                                    }
+                                    &:hover::after{
+                                        @include bottom-line-animation--2();
+                                    }
+                                }
+                            }
+                        }
+                    }
+    }
+
+    &.lpdg{
+        @include Caveat();
+        .menu{
+            h3{
+                font-size: 25px;
+                margin-top: 0px;
+            }
+            background-color: $light_blue;
+            .bar{
+                @include title--bar();
+                background: -webkit-linear-gradient(0deg, $font_green, $font_green_light);
+                &.rot{
+                    transform: rotate(180deg);
+                }
+            }
             h1{
-                @include blue_gradient_text();
+                @include green_gradient_text();
             }
             li{
                 @include list();
@@ -173,42 +224,19 @@
             }
             .menu--title{
                 @include title--menu();
-                    h2.blue1{
+                    h4{
                         cursor: pointer;
-                        @include h2-page--menu();
+                        @include h4-page--menu();
                         padding: 10px;
                         &::after{
                             @include bottom-line-animation--1();
-                            background-color: $font_lavande_light;
+                            background-color: $font_green;
                         }
                         &:hover::after{
                             @include bottom-line-animation--2();
                             }
                         }
-                        h2.blue2{
-                            cursor: pointer;
-                            @include h2-page--menu();
-                            padding: 10px;
-                            &::after{
-                                @include bottom-line-animation--1();
-                                background-color: $blue2;
-                            }
-                            &:hover::after{
-                                @include bottom-line-animation--2();
-                                }
-                            }
-                        h2.blue3{
-                            cursor: pointer;
-                            @include h2-page--menu();
-                            padding: 10px;
-                            &::after{
-                                @include bottom-line-animation--1();
-                                background-color: $blue3;
-                                }
-                            &:hover::after{
-                                @include bottom-line-animation--2();
-                                }
-                            }
                     }
                 }
+            }
 }
