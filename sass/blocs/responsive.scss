@@ -1,0 +1,27 @@
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+    .container {
+        margin: 0px;
+        width: 100%;
+    }
+    a.btn{
+        margin-bottom: 100px;
+    }
+    .container--singlemenu{
+        .menu{
+            width: 65%;
+            padding: 23px;
+            width: 80%;
+        }
+        padding-bottom: 50px;
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        text-align: left;
+        padding-bottom: 15px;
+        span{
+            padding-left: 15px;
+        }
+    }
+  }
