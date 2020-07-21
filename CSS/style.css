@@ -259,6 +259,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: #6b9bd2;
 }
@@ -266,6 +267,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: #325a87;
 }
@@ -273,6 +275,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: #193658;
 }
@@ -369,6 +372,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: #6c4747;
 }
@@ -410,6 +414,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: #c87629;
 }
@@ -417,6 +422,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: #3752a3;
 }
@@ -424,6 +430,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: #af9dcb;
 }
@@ -508,6 +515,7 @@ body {
   height: 5px;
   margin: auto;
   width: -webkit-fill-available;
+  min-width: 107px;
   border-radius: 80%;
   background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
 }
