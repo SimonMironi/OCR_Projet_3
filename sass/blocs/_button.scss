@@ -9,7 +9,7 @@ a.btn {
     color: $header_font_color;
     border-radius: 7px;
     margin: 20px auto;
-    
+    min-width: 185px;
         .dot.one{
           animation: opacity-animation 2s 0.66s ease-out infinite;
           

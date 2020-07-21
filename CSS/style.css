@@ -74,6 +74,7 @@ a.btn {
   color: #fbca46;
   border-radius: 7px;
   margin: 20px auto;
+  min-width: 185px;
 }
 a.btn .dot.one {
   animation: opacity-animation 2s 0.66s ease-out infinite;
@@ -124,18 +125,24 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  transition: 1.2s;
 }
-.container__menus:hover .container__menus--background {
+.container__menus:hover {
   filter: opacity(40%);
   transition: 1.2s;
+  cursor: pointer;
 }
 .container__menus:hover h2 {
   transform: scale(1.2);
   transition: 1.2s;
 }
+.container__menus:hover h3 {
+  transform: scale(1.2);
+  transition: 1.2s;
+}
 .container__menus.lne {
   color: #6c4747;
-  background-size: cover;
+  background-color: #fbe0da;
 }
 .container__menus.lne h2 {
   font-family: "Pacifico", cursive;
@@ -147,6 +154,9 @@ body {
   font-family: "Pacifico", cursive;
   font-size: 30px;
   z-index: 1;
+}
+.container__menus.lcalf {
+  background-color: #fef5f9;
 }
 .container__menus.lcalf h2 {
   font-family: "Prata", serif;
@@ -161,18 +171,24 @@ body {
   font-size: 30px;
   color: #c87629;
 }
+.container__menus.lddp {
+  background-color: #eeefef;
+}
 .container__menus.lddp h2 {
   font-family: "Dancing Script", cursive;
   transition: 1.2s;
   font-size: 26px;
-  background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
+  background: -webkit-linear-gradient(0deg, #3752a3, #6b9bd2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .container__menus.lddp h3 {
   font-family: "Dancing Script", cursive;
   font-size: 30px;
-  color: #5262ad;
+  color: #3752a3;
+}
+.container__menus.lpdg {
+  background-color: #f8f9fa;
 }
 .container__menus.lpdg h2 {
   background: -webkit-linear-gradient(0deg, #589d3f, #c2dc76);
@@ -186,30 +202,6 @@ body {
   font-family: "Caveat", cursive;
   font-size: 30px;
   color: #589d3f;
-}
-.container__menus .container__menus--background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  transition: filter 700ms;
-  position: absolute;
-  z-index: -2;
-  transition: 1.2s;
-}
-.container__menus .container__menus--background.lne {
-  background-color: #fbdfdb;
-}
-.container__menus .container__menus--background.lcalf {
-  background-color: #fef7fa;
-}
-.container__menus .container__menus--background.lddp {
-  background-color: #eeefef;
-}
-.container__menus .container__menus--background.lpdg {
-  background-color: #f8f9fa;
 }
 
 .container--singlemenu {
@@ -247,7 +239,7 @@ body {
   font-family: "Dancing Script", cursive;
 }
 .container--singlemenu.ldp h3 {
-  background: -webkit-linear-gradient(0deg, #5262ad, #6b9bd2);
+  background: -webkit-linear-gradient(0deg, #3752a3, #6b9bd2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -354,7 +346,7 @@ body {
   font-family: "Dancing Script", cursive;
 }
 .container--singlemenu.lne .menu {
-  background-color: #fbdfdb;
+  background-color: #fbe0da;
   color: #6c4747;
   font-family: "Dancing Script", cursive;
 }
@@ -405,7 +397,7 @@ body {
   font-family: "Prata", serif;
 }
 .container--singlemenu.lcaf .menu {
-  background-color: #fef7fa;
+  background-color: #fef5f9;
   font-family: "Prata", serif;
 }
 .container--singlemenu.lcaf .menu h3 {
@@ -426,7 +418,7 @@ body {
   margin: auto;
   width: -webkit-fill-available;
   border-radius: 80%;
-  background: #5262ad;
+  background: #3752a3;
 }
 .container--singlemenu.lcaf .menu .bar3 {
   height: 5px;
@@ -439,7 +431,7 @@ body {
   color: #c87629;
 }
 .container--singlemenu.lcaf .menu .menu__middletiers {
-  color: #5262ad;
+  color: #3752a3;
 }
 .container--singlemenu.lcaf .menu .menu__bottomtiers {
   color: #af9dcb;
@@ -481,7 +473,7 @@ body {
   left: 0%;
   transition: all 500ms ease;
   border-radius: 10px;
-  background-color: #5262ad;
+  background-color: #3752a3;
 }
 .container--singlemenu.lcaf .menu .menu--title h4.blue:hover::after {
   left: 0%;

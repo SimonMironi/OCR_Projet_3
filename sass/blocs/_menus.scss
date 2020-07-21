@@ -2,17 +2,23 @@
         @include text_center();
         position: relative;
         overflow: hidden;
-        &:hover .container__menus--background{
+        transition: 1.2s;
+        &:hover{
             filter: opacity(40%);
             transition: 1.2s;
-            h2, a.link_title{
+            cursor: pointer;
+            h2{
+                transform: scale(1.2);
+                transition: 1.2s;
+            }
+            h3{
                 transform: scale(1.2);
                 transition: 1.2s;
             }
         }
             &.lne{
                 color: $font_brown;
-                background-size: cover;
+                background-color: $salmon;
                 h2{
                     @include Pacifico();
                     transition: 1.2s;
@@ -24,6 +30,7 @@
                     z-index: 1;}
             }
             &.lcalf{
+                background-color: $light_pink;
                 h2{
                     @include Prata();
                     transition: 1.2s;
@@ -35,6 +42,7 @@
                     color: $font_gold_orange;}
                 }
             &.lddp{
+                background-color: $light_blue;
                 h2{
                     @include Dancing_Script();
                     transition: 1.2s;
@@ -46,6 +54,7 @@
                     color: $font_lavande;}
                 }
             &.lpdg{
+                background-color: $white;
                 h2{
                     @include green_gradient_text();
                     transition: 1.2s;
@@ -57,17 +66,5 @@
                     @include bigger_menu_title();
                     color: $font_green;
                 }
-            }
-                    .container__menus--background{
-                        @include background-image();
-                        transition: 1.2s;
-                        &.lne{
-                            background-color: $salmon;}
-                        &.lcalf{
-                            background-color: $light_pink;}
-                        &.lddp{
-                            background-color: $light_blue;}
-                        &.lpdg{
-                            background-color: $white;}
-                    }
+            }     
 }
