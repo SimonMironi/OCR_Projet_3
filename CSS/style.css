@@ -36,23 +36,20 @@ footer a {
   color: #fbca46;
 }
 footer a:hover {
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  animation: shake 0.82s;
 }
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+    transform: translateX(-1px);
   }
   20%, 80% {
-    transform: translate3d(2px, 0, 0);
+    transform: translateX(2px);
   }
   30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
+    transform: translateX(-4px);
   }
   40%, 60% {
-    transform: translate3d(4px, 0, 0);
+    transform: translateX(4px);
   }
 }
 
@@ -68,6 +65,7 @@ a.btn {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: fit-content;
   padding: 5px 20px;
   background-color: #549d88;
@@ -75,6 +73,7 @@ a.btn {
   border-radius: 7px;
   margin: 20px auto;
   min-width: 185px;
+  max-width: 200px;
 }
 a.btn .dot.one {
   animation: opacity-animation 2s 0.66s ease-out infinite;
@@ -143,6 +142,12 @@ body {
 .container__menus.lne {
   color: #6c4747;
   background-color: #fbe0da;
+}
+.container__menus.lne img {
+  height: 80px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container__menus.lne h2 {
   font-family: "Pacifico", cursive;
@@ -572,7 +577,6 @@ body {
   margin-bottom: auto;
   border-radius: 50%;
   background-color: #fbca46;
-  transition: transform 100ms ease-in-out;
 }
 
 body {

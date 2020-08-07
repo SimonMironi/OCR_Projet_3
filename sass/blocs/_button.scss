@@ -3,6 +3,7 @@ a.btn {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: fit-content;
     padding: 5px 20px;
     background-color: $header_footer_color;
@@ -10,17 +11,14 @@ a.btn {
     border-radius: 7px;
     margin: 20px auto;
     min-width: 185px;
+    max-width: 200px;
         .dot.one{
           animation: opacity-animation 2s 0.66s ease-out infinite;
-          
         }
         .dot.two{
           animation: opacity-animation 2s 1.32s ease-out infinite;
-          
         }
         .dot.three{
           animation: opacity-animation 2s 2s ease-out infinite;
-          
         }
-      
-    }
+      }
